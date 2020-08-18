@@ -139,5 +139,17 @@ lioness lioness field is chasing dog the
 
 ## A sneak peek into the architecture
 
-Since there are no datasets that provide 
+The final model is basically a combination of two models - \
+1) The image captioning model \
+2)  A language model \
+
+
+The image captioning model generates captions for the images and the language model takes the captions as seeds to generate furthur words. \
+The models are trained individually and then combined. \
+
+## Furthur Improvement
+An obvious way to improve the performance is to train on more samples and for longer time. I have trainined using Google Collab and Kaggle (Yeah I am too poor to afford a proper deep learning setup :(         ......)  .
+The caption model does pretty good job and captions generated are good. But the language model is not quiet good. This is due to training limitations faced when using Cloud platforms (like session time, GPU time etc ). Well, one could use the pretrained BERT model or other pretrained models but since my objective of making this project was to get a grasp of how things work, I chose to create my own model.
+
+
 
